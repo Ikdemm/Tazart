@@ -1,0 +1,19 @@
+/* Styles for tab labels */
+.mat-tab-label {
+    color: dimgray;
+    font-weight: 400;
+}
+
+.mat-tab-label.mat-tab-label-active {
+    color: #96cc39;
+    font-weight: 700;
+}
+
+/* Styles for the ink bar */
+.mat-ink-bar {
+    background-color: #96cc39 !important;
+}
+
+.post-entry-1 {
+    padding-top: 2em !important;
+}

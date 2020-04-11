@@ -1,0 +1,53 @@
+<!--<owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+  <div class="item" *ngFor="let slide of slides;let i = index">
+      <div class="ftco-blocks-cover-1">
+          <div class="ftco-cover-1" [ngStyle]="{'background-image': 'url(' + slide.background + ')'}">
+              <div class="container">
+                  <div class="row align-items-center justify-content-center">
+                      <div class="col-lg-10 text-center">
+                          <h1 class="header-title">{{slide.header}}</h1>
+                          <p class="background1-text">{{slide.text}}</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</owl-carousel>-->
+
+<owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+  <div class="item">
+    <div class="ftco-blocks-cover-1">
+      <div class="ftco-cover-1" [ngStyle]="{'background-image': 'url(' + 'assets/img/background6.webp' + ')'}">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-10 text-center">
+              <h1 class="header-title">News of <span class="text-primary header-title-span">Tazart</span></h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</owl-carousel>
+<br>
+
+<div class="site-section">
+    <div class="container">
+      <div class="row align-items-stretch">
+        <div *ngFor="let new of news" class="col-lg-3 col-md-6 mb-5">
+          <div class="post-entry-1 h-100">
+            <a [href]="new.link">
+              <img src={{new.imageUrl}} alt="Image" class="img-fluid">
+            </a>
+            <div class="post-entry-1-contents">
+              <!--<span class="meta">July 17, 2019</span>-->
+              <a [href]="new.link"><h2>{{new.title}}</h2></a>
+              <span class="meta">{{new.date}}</span>
+              <p class="my-3"><a [href]="new.link" class="more-39291">En savoir plus</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

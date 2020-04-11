@@ -1,0 +1,40 @@
+<owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+  <div class="item">
+    <div class="ftco-blocks-cover-1">
+      <div class="ftco-cover-1" [ngStyle]="{'background-image': 'url(' + 'assets/img/background6.webp' + ')'}">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-10 text-center">
+              <h1 class="header-title">{{segment.title}} 
+                <span class="text-primary header-title-span">
+                  {{segment.styled}}
+                </span>
+              </h1>
+              <p class="background1-text">{{segment.subtitle}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</owl-carousel>
+<br>
+
+<div class="site-section">
+  <div class="container">
+    <div class="row product">
+      <div class="col-md-5 text-center">
+        <owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+          <div *ngFor="let product of products"class="item">
+            <div class="product-2">
+              <img src="{{product.photoRawUrl}}" class="product-image">
+              <h4 class="product-title text-center">{{product.caption}}</h4>
+            </div>
+          </div>
+        </owl-carousel>
+      </div>
+      <div class="col-md-7">
+        <p class="product-description">{{segment.description}}</p>
+      </div>
+  </div>
+</div>
