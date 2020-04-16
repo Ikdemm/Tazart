@@ -6,7 +6,7 @@ import { ContactComponent } from './modules/contact/contact.component';
 import { AboutComponent } from './modules/about/about.component';
 import { ResellersComponent } from './modules/resellers/resellers.component';
 import { NewsComponent } from './modules/news/news.component';
-import { ProfessionalComponent } from './modules/professional/professional.component';
+import { ProfessionalListComponent } from './modules/professional//professional-list/professional-list.component';
 
 
 const routes: Routes = [
@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'resellers', component: ResellersComponent },
   { path: 'news', component: NewsComponent },
-  { path: 'professional', component: ProfessionalComponent },
+  { path: 'professional', component: ProfessionalListComponent },
   {
     path: 'home',
     component: HomeComponent

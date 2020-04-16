@@ -1737,6 +1737,7 @@ html {
   .header-title {
     color: #000;
     font-family: 'Cabin Sketch', cursive !important;
+    width: 100%;
     font-size: 3.5em;
   }
   

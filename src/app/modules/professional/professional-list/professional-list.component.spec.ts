@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProfessionalComponent } from './professional.component';
+import { ProfessionalListComponent } from './professional-list.component';
 
-describe('ProfessionalComponent', () => {
-  let component: ProfessionalComponent;
-  let fixture: ComponentFixture<ProfessionalComponent>;
+describe('ProfessionalListComponent', () => {
+  let component: ProfessionalListComponent;
+  let fixture: ComponentFixture<ProfessionalListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProfessionalComponent ]
+      declarations: [ ProfessionalListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProfessionalComponent);
+    fixture = TestBed.createComponent(ProfessionalListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

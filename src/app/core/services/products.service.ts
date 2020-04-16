@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'; 
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -9,42 +9,62 @@ export class ProductsService {
 
   data;
 
-  dateSegments = [];
-  figSegments = [];
-  syrupSegments = [];
-  sugarSegments = [];
-
   getData() {
     return this.http.get('./assets/data/mock-products.json');
   }
 
-  /*getSegmentByName(name: string) {
-    this.http.get('./assets/data/mock-products.json').
-      subscribe( data => {
-        this.data = data;
-        
-          category.elements.forEach(segment => {
-            console.log(segment.name);
-            if (segment.name === name) {
-              return segment;
-            }
-          });
-        });
-      }
-    )
-  }*/
+  getSegments() {
+    let segments = [];
+    let retrievedData;
+    this.getData().subscribe(data => {
+      retrievedData = data;
+      retrievedData.forEach(category => {
+        category.elements.forEach(segment => {
+          segments.push(segment);
+        })
+      })
+    })
+    return (segments);
+  }
 
-  getSegments(categorie: string) {
-    switch(categorie) {
-      case "dates": return this.dateSegments; break;
-      case "figs": return this.figSegments; break;
-      case "syrups": return this.syrupSegments; break;
-      case "sugars": return this.sugarSegments; break;
-    }
+  getSegmentByName(paramsName: string) {
+    let segments = [];
+    let retrievedData;
+    this.getData().subscribe(data => {
+      retrievedData = data;
+      retrievedData.forEach(category => {
+        category.elements.forEach(segment => {
+          segments.push(segment);
+        })
+      })
+    })
+    console.log(segments);
+    segments.forEach(element => {
+    console.log(element);
+        /*segment = segments.find(element => element.name == paramsName); 
+        if (segment) {
+          console.log(segment);
+          return(segment);
+        }*/
+      })
+  }
+
+  getProducts(): Observable<any> {
+    let products = [];
+    let retrievedData;
+    this.getData().subscribe(data => {
+      retrievedData = data;
+      retrievedData.forEach(category => {
+        category.elements.forEach(element => {
+          element.products.forEach(product => {
+            products.push(product);
+          });
+        });        
+      });
+    });
+    return of(products);
   }
 
   constructor(private http: HttpClient) {
-    this.getData();
-    
   }
 }

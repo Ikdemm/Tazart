@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, ɵConsole} from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { CAROUSEL_OPTIONS, SLIDE_OPTIONS} from '../../../shared/constants';
 import { ProductsService } from 'src/app/core/services/products.service';
@@ -10,6 +10,8 @@ import { ProductsService } from 'src/app/core/services/products.service';
 })
 export class ProductDetailsComponent implements OnInit {
 
+  segmentName;
+  segments;
   segment;
   products = [];
   data;
@@ -21,6 +23,13 @@ export class ProductDetailsComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private productsService: ProductsService) { }
+
+
+  fetchProducts() {
+    this.productsService.getProducts().subscribe(data => {
+      console.log(data);
+    })
+  }
 
   ngOnInit() {
     this.productsService.getData().subscribe(data => {
@@ -40,8 +49,7 @@ export class ProductDetailsComponent implements OnInit {
                 found = true;
               }
             }
-          } 
-        );
+          });
       })
     })
   }

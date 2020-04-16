@@ -26,6 +26,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "dates",
                         "technicalSheet": {
                             "description": "Trendy Date Deglet Nour yellow to brown",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -51,6 +52,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "dates",
                         "technicalSheet": {
                             "description": "Trendy Date Deglet Nour yellow to brown",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -86,6 +88,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "dates",
                         "technicalSheet": {
                             "description": "Date Deglet Nour in bulk amber to brown",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -111,6 +114,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "dates",
                         "technicalSheet": {
                             "description": "Date Deglet Nour in bulk amber to brown",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -146,6 +150,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "dates",
                         "technicalSheet": {
                             "description": "Trendy Date Deglet Nour amber to brown",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -171,6 +176,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "dates",
                         "technicalSheet": {
                             "description": "Trendy Date Deglet Nour amber to brown",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -212,6 +218,7 @@
                         "height": "1.6",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "figs",
                         "technicalSheet": {
                             "description": "Natural dried figs: solar drying on the tree",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -220,7 +227,7 @@
                             "use": "Consumption",
                             "calibar": "90 unit/kg",
                             "category": "1",
-                            "category code": "9",
+                            "categoryCode": "9",
                             "type": "Oily to semi-dry between 18% et 26%"
                         }
                     },
@@ -239,6 +246,7 @@
                         "height": "1.6",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "figs",
                         "technicalSheet": {
                             "description": "Natural dried figs: solar drying on the tree",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -247,7 +255,7 @@
                             "use": "Consumption",
                             "calibar": "90 unit/kg",
                             "category": "1",
-                            "category code": "9",
+                            "categoryCode": "9",
                             "type": "Oily to semi-dry between 18% et 26%"
                         }
                     }
@@ -276,6 +284,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "figs",
                         "technicalSheet": {
                             "description": "Natural dried figs cubes with dried fruits and olive oil: Solar drying on the tree",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -284,7 +293,7 @@
                             "use": "Consumption",
                             "calibar": "90 unit/kg",
                             "category": "1",
-                            "category code": "9",
+                            "categoryCode": "9",
                             "type": "Oily to semi-dry between 18% et 26%"
                         }
                     },
@@ -303,6 +312,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "figs",
                         "technicalSheet": {
                             "description": "Dried figs with olive oil: solar drying on the tree",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -311,7 +321,7 @@
                             "use": "Consumption",
                             "calibar": "105 unit/kg",
                             "category": "1",
-                            "category code": "10",
+                            "categoryCode": "10",
                             "type": "Oily to semi-dry between 18% et 26%"
                         }
                     }
@@ -340,6 +350,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
+                        "category": "figs",
                         "technicalSheet": {
                             "description": "Natural dried figs cubes with dried fruits and olive oil: Solar drying on the tree",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
@@ -348,7 +359,7 @@
                             "use": "Consumption",
                             "calibar": "90 unit/kg",
                             "category": "1",
-                            "category code": "9",
+                            "categoryCode": "9",
                             "type": "Oily to semi-dry between 18% et 26%"
                         }
                     }
@@ -374,7 +385,8 @@
                         "photoUrl": "assets/img/products/sirop-datte.webp",
                         "photoRawUrl": "assets/img/products-raw/sirop-datte-raw.webp",
                         "caption": "Mixture based on washed and cooked dates in a glass pot - 340g",
-                        "packaging": "Glass pot 340g"
+                        "packaging": "Glass pot 340g",
+                        "category": "fruits"
                     }
                 ]   
             },
@@ -387,12 +399,13 @@
                 "prize": null,
                 "products": [
                     {
-                        "name": "Dates Syrup",
-                        "segment": "Figs' syrup",
+                        "name": "Figs' Syrup",
+                        "segment": "Dried figs' syrup",
                         "photoUrl": "assets/img/products/sirop-figue-lueur.webp",
                         "photoRawUrl": "assets/img/products-raw/sirop-figues-seche-raw.webp",
                         "caption": "Mixture based on washed and cooked dates in a glass pot - 340g",
-                        "packaging": "Glass pot 340g"
+                        "packaging": "Glass pot 340g",
+                        "category": "fruits"
                     }
                 ]   
             }
@@ -411,12 +424,13 @@
                 "prize": null,
                 "products": [
                     {
-                        "name": "Dates Syrup",
+                        "name": "Dates Sugar",
                         "segment": "Dates' Sugar",
                         "photoUrl": "assets/img/products/sucre-datte.webp",
                         "photoRawUrl": "assets/img/products-raw/sucre-datte-raw.webp",
                         "caption": "Natural sugar based on pitted, dried and finely ground dates in a packet - 250g",
-                        "packaging": "Pack 250g"
+                        "packaging": "Pack 250g",
+                        "category": "sugars"
                     }
                 ]   
             }

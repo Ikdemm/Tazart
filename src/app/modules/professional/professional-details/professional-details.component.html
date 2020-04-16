@@ -1,0 +1,133 @@
+<ngx-spinner></ngx-spinner>
+<owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+    <div class="item">
+      <div class="ftco-blocks-cover-1">
+        <div class="ftco-cover-1" [ngStyle]="{'background-image': 'url(' + 'assets/img/background6.webp' + ')'}">
+          <div class="container">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-10 text-center">
+                <h1 class="header-title">The techincal sheets of all our 
+                  <span class="text-primary header-title-span"> Products</span>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+</owl-carousel>
+<br>
+    <div class="site-section">
+        <div class="container">
+            <h1 class="footer-title" style="padding-bottom: 0.5em; font-size: 2em;">{{product.name}}</h1>
+            <table class="table table-sm table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                <th scope="col" class="table-header center-align">Product designation</th>
+                <th scope="col" class="table-header">Pack/<br>Box</th>
+                <th scope="col" class="table-header">Box/<br>Pallet</th>
+                <th scope="col" class="table-header">Net weight<br>Pal(kg)</th>
+                <th scope="col" class="table-header">Gross weight<br>Pal(kg)</th>
+                <th scope="col" class="table-header center-align">Height Pal</th>
+                <th scope="col" class="table-header center-align">Pal./SR</th>
+                <th scope="col" class="table-header">Pal. /<br>Container 0’ Frigo | Dry</th>
+                </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                    <th scope="row">{{product.designation}}</th>
+                    <td>{{product.packpBox}}</td>
+                    <td>{{product.boxpPallet}}</td>
+                    <td>{{product.netWeight}}</td>
+                    <td>{{product.grossWeight}}</td>
+                    <td>{{product.height}}</td>
+                    <td>{{product.palpSR}}</td>
+                    <td>{{product.frigoDry}}</td>
+                    </tr>
+                </tbody>
+            </table>
+                <table *ngIf="product.category === 'dates'" class="table table-striped" id="fiche-technique">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" colspan="3" class="fiche-technique-header">Technical Sheet</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <th scope="row" class="text-left">Description</th>
+                        <td colspan="2" class="text-left">{{product.technicalSheet.description}}</td>
+                        </tr>
+                        <tr>
+                        <th scope="row" class="text-left">Storage</th>
+                        <td colspan="2" class="text-left">{{product.technicalSheet.storage}}</td>
+                        </tr>
+                        <tr>
+                        <th scope="row" class="text-left">Harvest period</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.harvestPeriod}}</td>
+                        </tr>
+                        <tr>
+                        <th scope="row" class="text-left">Region</th>
+                        <td colspan="2" class="text-left">{{product.technicalSheet.region}}</td>
+                        </tr>
+                        <tr>
+                        <th scope="row" class="text-left">Use</th>
+                        <td colspan="2" class="text-left">{{product.technicalSheet.use}}</td>
+                        </tr>
+                        <tr>
+                        <th scope="row" class="text-left">Status</th>
+                        <td colspan="2" class="text-left">{{product.technicalSheet.status}}</td>
+                        </tr>
+                        <tr>
+                        <th scope="row" class="text-left">Type</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.type}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <table *ngIf="product.category === 'figs'" class="table table-striped" id="fiche-technique">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" colspan="3" class="fiche-technique-header">Technical Sheet</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-left">Description</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.description}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">Storage</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.storage}}</td>
+                        </tr>
+                        <tr>
+                        <th scope="row" class="text-left">Harvest period</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.harvestPeriod}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">Region</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.region}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">Use</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.use}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">Calibar</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.calibar}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">Category</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.category}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">Category Code</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.categoryCode}}</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="text-left">Type</th>
+                            <td colspan="2" class="text-left">{{product.technicalSheet.type}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
