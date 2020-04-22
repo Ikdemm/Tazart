@@ -342,7 +342,7 @@
                         "photoRawUrl": "assets/img/products-raw/figs-bulk-raw.webp",
                         "caption": "Bag of dried figs in bulk - 1kg",
                         "packaging": "Bag 1kg",
-                        "designation": "Glass pot of dried figs with dried fruits and olive oil 200g",
+                        "designation": "Natural dried figs:  solar drying on the tree",
                         "packpBox": "12",
                         "boxpPallet": "192",
                         "netWeight": "460.8",
@@ -352,7 +352,7 @@
                         "frigoDry": "10",
                         "category": "figs",
                         "technicalSheet": {
-                            "description": "Natural dried figs cubes with dried fruits and olive oil: Solar drying on the tree",
+                            "description": "Natural dried figs: solar drying on the tree ",
                             "storage": "12 months – temperature from 0°C to 4°C HR<65%",
                             "harvestPeriod": "August to September",
                             "region": "Tataouine-Tunisia",
@@ -369,7 +369,7 @@
     },
     {
         "name": "Fruits' syrup",
-        "label": "Fruits",
+        "label": "syrups",
         "elements" : [
             {
                 "name": "Dates' syrup",
@@ -386,7 +386,7 @@
                         "photoRawUrl": "assets/img/products-raw/sirop-datte-raw.webp",
                         "caption": "Mixture based on washed and cooked dates in a glass pot - 340g",
                         "packaging": "Glass pot 340g",
-                        "category": "fruits"
+                        "category": "syrups"
                     }
                 ]   
             },
@@ -405,7 +405,7 @@
                         "photoRawUrl": "assets/img/products-raw/sirop-figues-seche-raw.webp",
                         "caption": "Mixture based on washed and cooked dates in a glass pot - 340g",
                         "packaging": "Glass pot 340g",
-                        "category": "fruits"
+                        "category": "syrups"
                     }
                 ]   
             }

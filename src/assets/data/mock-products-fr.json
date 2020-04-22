@@ -1,0 +1,439 @@
+[
+    {
+        "name": "Dattes",
+        "label": "Dattes",
+        "elements" : [
+            {
+                "name": "Coffrets cadeaux",
+                "title": "Découvrer nos coffrets cadeaux de ",
+                "styled": "Dattes naturelles",
+                "subtitle": "Pour se jouir en famille ou pour les offrir aux amis",
+                "description": "Les Dattes sont connues par la richesse en vitamines, minéraux et oligo-éléments d’où viennent les nombreux bienfaits pour la santé tels que la diminution du taux du cholestérol, les risques du cancer et les maladies cardio-vasculaires…",
+                "prize": "assets/img/prize.webp",
+                "products": [
+                    {
+                        "name": "Deglet Nour branchées",
+                        "segment": "Coffrets cadeaux",
+                        "photoUrl": "assets/img/products/gift-box1kgOpen.webp",
+                        "photoRawUrl": "assets/img/products-raw/figs-olive-raw-1.webp",
+                        "caption": "Deglet Nour  branchées, Qualité extra 1kg, Médaille d’or dans le concours des produits de terroir 2017",
+                        "packaging": "Qualité Extra 1kg",
+                        "designation": "Coffret cadeau dattes naturelles 1kg en bois",
+                        "packpBox": "10",
+                        "boxpPallet": "64",
+                        "netWeight": "640",
+                        "grossWeight": "780",
+                        "height": "1.8",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "dattes",
+                        "technicalSheet": {
+                            "description": "Datte Deglet Nour branchée de couleur jaune à brune",
+                            "storage": "12 mois – température de 0°C à 4°C HR<65%",
+                            "harvestPeriod": "Octobre à Décembre",
+                            "region": "Zaafrane-Douz-Kébili",
+                            "use": "Consommation",
+                            "status": "Avec noyaux",
+                            "type": "Grasse comprise entre 20% et 30%"
+                        }
+                    },
+                    {
+                        "name": "Deglet Nour en vrac",
+                        "segment": "Coffrets cadeaux",
+                        "photoUrl": "assets/img/products/gift-box500gouvert.webp",
+                        "photoRawUrl": "assets/img/products-raw/gift-box-raw-1.webp",
+                        "caption": "Deglet Nour branchées, Qualité extra 500g, Médaille d’or dans le concours des produits de terroir 2017",
+                        "packaging": "Qualité Extra 500g",
+                        "designation": "Coffret cadeau dattes naturelles 500g en bois",
+                        "packpBox": "20",
+                        "boxpPallet": "64",
+                        "netWeight": "640",
+                        "grossWeight": "780",
+                        "height": "1.8",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "dattes",
+                        "technicalSheet": {
+                            "description": "Datte Deglet Nour branchée de couleur jaune à brune",
+                            "storage": "12 mois – température de 0°C à 4°C HR<65%",
+                            "harvestPeriod": "Octobre à Décembre",
+                            "region": "Zaafrane-Douz-Kébili",
+                            "use": "Consommation",
+                            "status": "Avec noyaux",
+                            "type": "Grasse comprise entre 20% et 30%"
+                        }
+                    }
+                ]            
+            },
+            {
+                "name": "Paquets",
+                "title": "Dévouvrer nos paquets de",
+                "styled": "Dattes naturelles",
+                "subtitle": "Pour se jouir en famille ou pour les offrir aux amis",
+                "description": "Les Dattes sont connues par la richesse en vitamines, minéraux et oligo-éléments d’où viennent les nombreux bienfaits pour la santé tels que la diminution du taux du cholestérol, les risques du cancer et les maladies cardio-vasculaires…",
+                "prize": null,
+                "products": [
+                    {
+                        "name": "Deglet Nour branchées",
+                        "segment": "Paquets",
+                        "photoUrl": "assets/img/products/packs1.webp",
+                        "photoRawUrl": "assets/img/products-raw/pack-raw-1.webp",
+                        "caption": "Deglet Nour branchées, Catégory 1 - 1kg",
+                        "packaging": "Categorie1 1kg",
+                        "designation": "Paquet dattes naturelles 1kg",
+                        "packpBox": "10",
+                        "boxpPallet": "64",
+                        "netWeight": "640",
+                        "grossWeight": "740",
+                        "height": "1.8",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "dattes",
+                        "technicalSheet": {
+                            "description": "Datte Deglet Nour branchée de couleur ambrée à brune",
+                            "storage": "12 mois – température de 0°C à 4°C HR<65%",
+                            "harvestPeriod": "Octobre à Décembre",
+                            "region": "Zaafrane-Douz-Kébili",
+                            "use": "Consommation",
+                            "status": "Avec noyaux",
+                            "type": "Grasse à demi-sèche comprise entre 18% et 22%"
+                        }
+                    },
+                    {
+                        "name": "Deglet Nour en vrac",
+                        "segment": "Packs",
+                        "photoUrl": "assets/img/products/packs2-new.webp",
+                        "photoRawUrl": "src/assets/img/products-raw/pack-raw-new-2.webp",
+                        "caption": "Deglet Nour en vrac, Categorie 1 - 500g",
+                        "packaging": "Categorie1 500g",
+                        "designation": "Paquet dattes naturelles 500g",
+                        "packpBox": "20",
+                        "boxpPallet": "64",
+                        "netWeight": "640",
+                        "grossWeight": "740",
+                        "height": "1.8",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "dattes",
+                        "technicalSheet": {
+                            "description": "Datte Deglet Nour branchée de couleur ambrée à brune",
+                            "storage": "12 mois – température de 0°C à 4°C HR<65%",
+                            "harvestPeriod": "Octobre à Décembre",
+                            "region": "Zaafrane-Douz-Kébili",
+                            "use": "Consommation",
+                            "status": "Avec noyaux",
+                            "type": "Grasse à demi-sèche comprise entre 18% et 22%"
+                        }
+                    }
+                ]  
+            },
+            {
+                "name": "Dattes en vrac",
+                "title": "Découvrer nos ",
+                "styled": "Dattes en vrac",
+                "subtitle": "Des petits paquets pour un vrai régal",
+                "description": "Les Dattes sont connues par la richesse en vitamines, minéraux et oligo-éléments d’où viennent les nombreux bienfaits pour la santé tels que la diminution du taux du cholestérol, les risques du cancer et les maladies cardio-vasculaires…",
+                "prize": null,
+                "products": [
+                    {
+                        "name": "Deglet Nour in bulk",
+                        "segment": "Dates in bulk",
+                        "photoUrl": "assets/img/products/dates-bulk1.webp",
+                        "photoRawUrl": "assets/img/products-raw/dates-bulk-raw-1.webp",
+                        "caption": "Deglet Nour in pack - 250g",
+                        "packaging": "Pack 250g",
+                        "designation": "Dates pack in bulk (250g)",
+                        "packpBox": "20",
+                        "boxpPallet": "192",
+                        "netWeight": "768",
+                        "grossWeight": "832",
+                        "height": "1.8",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "dates",
+                        "technicalSheet": {
+                            "description": "Trendy Date Deglet Nour amber to brown",
+                            "storage": "12 months – temperature from 0°C to 4°C HR<65%",
+                            "harvestPeriod": "October to December",
+                            "region": "Zaafrane-Douz-Kébili",
+                            "use": "Consumption",
+                            "status": "With stones",
+                            "type": "Oily to semi-dry between 18% and 22%"
+                        }
+                    },
+                    {
+                        "name": "Deglet Nour en vrac",
+                        "segment": "Dates en vrac",
+                        "photoUrl": "assets/img/products/dates-bulk2.webp",
+                        "photoRawUrl": "assets/img/products-raw/dates-bulk-raw-2.webp",
+                        "caption": "Deglet Nour en barquette en bois - 250g",
+                        "packaging": "Barquette en bois 250g",
+                        "designation": "Barquette dattes en vrac 250g en bois",
+                        "packpBox": "16",
+                        "boxpPallet": "192",
+                        "netWeight": "768",
+                        "grossWeight": "832",
+                        "height": "1.8",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "dattes",
+                        "technicalSheet": {
+                            "description": "Datte Deglet Nour en vrac de couleur ambrée à brune",
+                            "storage": "12 mois – température de 0°C à 4°C HR<65%",
+                            "harvestPeriod": "Octobre à décembre",
+                            "region": "Zaafrane-Douz-Kébili",
+                            "use": "Consommation",
+                            "status": "Avec noyaux",
+                            "type": "Grasse à demi-sèche comprise entre 18% et 22%"
+                        }
+                    }
+                ]    
+            }
+        ]
+    },
+    {
+        "name": "Figues séchées",
+        "label": "Figues",
+        "elements": [
+            {
+                "name": "Coffrets en bois",
+                "title": "Découvrer nos coffrets en bois de ",
+                "styled": "Figues séchées",
+                "subtitle": "Pour se jouir en famille ou pour les offrir aux amis",
+                "description": "Les figues séchées sont très riches en vitamines , sels minéraux antioxydants et en fibres ce qui leur donne le caractère digestif, le pouvoir de la régulation du cholestérol et d’humeur , le renforcement des os en plus de plusieurs autres vertus.",
+                "prize": null,
+                "products": [
+                    {
+                        "name": "Figues séchées naturellement",
+                        "segment": "Coffrets en bois",
+                        "photoUrl": "assets/img/products/wooden-box2.webp",
+                        "photoRawUrl": "assets/img/products-raw/wooden-box-raw-2.webp",
+                        "caption": "Figues séchées naturellement séchées sur l'arbre Bayoudhi - 700g",
+                        "packaging": "Coffret en bois 700g",
+                        "designation": "Coffret figues séchées 700g en bois",
+                        "packpBox": "10",
+                        "boxpPallet": "64",
+                        "netWeight": "784",
+                        "grossWeight": "874",
+                        "height": "1.6",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "figues",
+                        "technicalSheet": {
+                            "description": "Figues séchées naturelles - séchage solaire sur l’arbre",
+                            "storage": "12 mois – température de 0°C à 4°C HR<65%",
+                            "harvestPeriod": "Août à Septembre",
+                            "region": "Tataouine-Tunisie",
+                            "use": "Consommation",
+                            "calibar": "90 unités/kg",
+                            "category": "1",
+                            "categoryCode": "9",
+                            "type": "Grasse à demi-sèche comprise entre 18% et 26%"
+                        }
+                    },
+                    {
+                        "name": "Figues séchées naturellement",
+                        "segment": "Coffrets en bois",
+                        "photoUrl": "assets/img/products/wooden-box1.webp",
+                        "photoRawUrl": "assets/img/products-raw/wooden-box-raw-1.webp",
+                        "caption": "Figues séchées naturellement séchées sur l'arbre Bayoudhi - 1.5kg",
+                        "packaging": "Coffret en bois 700g",
+                        "designation": "Coffret figues séchées 1.5kg en bois",
+                        "packpBox": "20",
+                        "boxpPallet": "64",
+                        "netWeight": "840",
+                        "grossWeight": "930",
+                        "height": "1.6",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "figues",
+                        "technicalSheet": {
+                            "description": "Figues séchées naturelles - séchage solaire sur l’arbre",
+                            "storage": "12 mois – température de 0°C à 4°C HR<65%",
+                            "harvestPeriod": "Août à Septembre",
+                            "region": "Tataouine-Tunisie",
+                            "use": "Consommation",
+                            "calibar": "90 unités/kg",
+                            "category": "1",
+                            "categoryCode": "9",
+                            "type": "Grasse à demi-sèche comprise entre 18% et 26%"
+                        }
+                    }
+                ]   
+            },
+            {
+                "name": "Figues séchées",
+                "title": "Découvrez nos figues séchées à ",
+                "styled": "l'huile d'olive",
+                "subtitle": null,
+                "description": "Les figues séchées sont très riches en vitamines , sels minéraux antioxydants et en fibres ce qui leur donne le caractère digestif, le pouvoir de la régulation du cholestérol et d’humeur, le renforcement des os en plus de plusieurs autres vertus.",
+                "prize": null,
+                "products": [
+                    {
+                        "name": "Cubes de figues séchées aux fruits secs et à l'huile d'olive",
+                        "segment": "Figues séchées à l'huile d'olive",
+                        "photoUrl": "assets/img/products/figs-olive1.webp",
+                        "photoRawUrl": "assets/img/products-raw/figs-olive-raw-1.webp",
+                        "caption": "Cubes de figues séchées aux fruits secs et à l'huile d'olive dans un pot en verre - 200g",
+                        "packaging": "Pot en verre - 200g",
+                        "designation": "Pot de cubes de figues séchées aux fruits secs et à huile d’olive pot en verre 200g",
+                        "packpBox": "12",
+                        "boxpPallet": "192",
+                        "netWeight": "460.8",
+                        "grossWeight": "510",
+                        "height": "1.8",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "figs",
+                        "technicalSheet": {
+                            "description": "Cubes de figues séchées naturelles aux fruits secs et à huile d’olive -séchage solaire sur l’arbre",
+                            "storage": "12 mois – température de 0°C à 4°C HR<65%",
+                            "harvestPeriod": "Août à Septembre",
+                            "region": "Tataouine-Tunisie",
+                            "use": "Consommation",
+                            "calibar": "90 unités/kg (avant le découpage en cubes)",
+                            "category": "1",
+                            "categoryCode": "9",
+                            "type": "Grasse à demi-sèche comprise entre 18% et 26%"
+                        }
+                    },
+                    {
+                        "name": "Cubes de figues séchées à l'huile d'olive",
+                        "segment": "Figues séchées à l'huile d'olive",
+                        "photoUrl": "assets/img/products/figs-olive2.webp",
+                        "photoRawUrl": "assets/img/products-raw/figs-olive-raw-2.webp",
+                        "caption": "Figues séchées à l'huile d'olive - 300g",
+                        "packaging": "Barquette 300g",
+                        "designation": "Barquette figues séchées à huile d'olive 300g",
+                        "packpBox": "27",
+                        "boxpPallet": "64",
+                        "netWeight": "518.4",
+                        "grossWeight": "596.4",
+                        "height": "1.8",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "figs",
+                        "technicalSheet": {
+                            "description": "Figues séchées à huile d’olive - séchage solaire sur l’arbre",
+                            "storage": "12 mois – température de 0°C à 4°C HR<65%",
+                            "harvestPeriod": "Août à Septembre",
+                            "region": "Tataouine-Tunisie",
+                            "use": "Consommation",
+                            "calibar": "105 unit/kg",
+                            "category": "1",
+                            "categoryCode": "10",
+                            "type": "Grasse à demi-sèche comprise entre 18% et 26%"
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Figues séchées en vrac",
+                "title": "Découvrez nos figues séchées ",
+                "styled": "en vrac",
+                "subtitle": "",
+                "description": "Les figues séchées sont très riches en vitamines , sels minéraux antioxydants et en fibres ce qui leur donne le caractère digestif, le pouvoir de la régulation du cholestérol et d’humeur, le renforcement des os en plus de plusieurs autres vertus.",
+                "prize": null,
+                "products": [
+                    {
+                        "name": "Figues séchées naturellement séchées sur l'arbre",
+                        "segment": "Figues séchées en vrac",
+                        "photoUrl": "assets/img/products/figs-bulk.webp",
+                        "photoRawUrl": "assets/img/products-raw/figs-bulk-raw.webp",
+                        "caption": "Sac de figues séchées en vrac - 1kg",
+                        "packaging": "Sac 1kg",
+                        "designation": "Sac de figues séchées en vrac - 1kg",
+                        "packpBox": "12",
+                        "boxpPallet": "192",
+                        "netWeight": "460.8",
+                        "grossWeight": "510",
+                        "height": "1.8",
+                        "palpSR": "33",
+                        "frigoDry": "10",
+                        "category": "figues",
+                        "technicalSheet": {
+                            "description": "Figues séchées naturelles - séchage solaire sur l’arbre",
+                            "storage": "12 months – temperature from 0°C to 4°C HR<65%",
+                            "harvestPeriod": "Août à Septembre",
+                            "region": "Tataouine-Tunisie",
+                            "use": "Consommation",
+                            "calibar": "90 unit/kg",
+                            "category": "1",
+                            "categoryCode": "9",
+                            "type": "Grasse à demi-sèche comprise entre 18% et 26%"
+                        }
+                    }
+                ]
+            }        
+        ]
+    },
+    {
+        "name": "Sirops de fruits",
+        "label": "Sirops",
+        "elements" : [
+            {
+                "name": "Sirop de dattes",
+                "title": "Découvrer nos",
+                "styled": "Sirops de dattes",
+                "subtitle": null,
+                "description": "Le sirop de dattes est riche en : potassium pour la contraction musculaire, le magnésium anti-stress, le fer anti-fatigue et le calcium pour la solidité osseuse. C’est une alternative naturelle des sucres blancs à utiliser dans vos boissons, crêpes, gaufres, yaourt…",
+                "prize": null,
+                "products": [
+                    {
+                        "name": "Sirop de dattes",
+                        "segment": "Sirop de dattes",
+                        "photoUrl": "assets/img/products/sirop-datte.webp",
+                        "photoRawUrl": "assets/img/products-raw/sirop-datte-raw.webp",
+                        "caption": "Préparation à base de dattes lavées et mises en cuisson, pot en verre de 340g",
+                        "packaging": "Pot en verre 340g",
+                        "category": "sirops"
+                    }
+                ]   
+            },
+            {
+                "name": "Sirop de figues séchées",
+                "title": "Découvrer notre",
+                "styled": "Sirop de figue séchées",
+                "subtitle": null,
+                "description": "Le sirop de figues séchées est riche en magnésium et calcium, à utiliser dans vos pâtisseries, granola, boissons… pour remplacer les sucres blancs considérés toxiques.",
+                "prize": null,
+                "products": [
+                    {
+                        "name": "Sirop de figues séchées",
+                        "segment": "Sirop de figues séchées",
+                        "photoUrl": "assets/img/products/sirop-figue-lueur.webp",
+                        "photoRawUrl": "assets/img/products-raw/sirop-figues-seche-raw.webp",
+                        "caption": "Préparation à base de figues lavées et mises en cuisson, pot en verre de 340g",
+                        "packaging": "Pot en verre 340g",
+                        "category": "syrups"
+                    }
+                ]   
+            }
+        ]
+    },
+    {
+        "name": "Sucres de fruits",
+        "label": "Sucres",
+        "elements" : [
+            {
+                "name": "Sucres de dattes",
+                "title": "Découvrer notre",
+                "styled": "Sucre de dattes",
+                "subtitle": null,
+                "description": "A l’instar des dattes naturelles, le sucre de dattes est riche en fibres naturelles, sels minéraux, protéines,et vitamines avec moins de matières grasses que le sucre blanc qui est considéré toxique.",
+                "prize": null,
+                "products": [
+                    {
+                        "name": "Sucre de dattes",
+                        "segment": "Sucre de dattes",
+                        "photoUrl": "assets/img/products/sucre-datte.webp",
+                        "photoRawUrl": "assets/img/products-raw/sucre-datte-raw.webp",
+                        "caption": "Paquet de 250g de sucre à base de dattes dénoyautées, séchées et finement broyées",
+                        "packaging": "Paquet 250g",
+                        "category": "sucres"
+                    }
+                ]   
+            }
+        ]
+    }     
+]
