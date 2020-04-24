@@ -12,6 +12,8 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
+import { StickyNavModule } from 'ng2-sticky-nav';
+
 @NgModule({
   declarations: [ FooterComponent, NavbarComponent, TopbarComponent],
   imports: [
@@ -25,7 +27,8 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
             useFactory: HttpLoaderFactory,
             deps: [HttpClient]
         }
-    })
+    }),
+    StickyNavModule
   ],
   exports: [ FooterComponent, NavbarComponent, TopbarComponent, OwlModule]
 })

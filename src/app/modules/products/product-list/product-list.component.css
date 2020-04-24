@@ -21,3 +21,8 @@
 .products {
     width: 100%;
 }
+
+i {
+    font-size: 1em;
+    padding-left: 0.2em;
+}

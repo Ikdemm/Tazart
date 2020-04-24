@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, DoCheck } from '@angular/core';
 import { ProductsService } from 'src/app/core/services/products.service';
 import { TranslateService } from '@ngx-translate/core';
 import { LanguageService } from 'src/app/core/services/language.service';
@@ -8,17 +8,20 @@ import { LanguageService } from 'src/app/core/services/language.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit, OnDestroy {
+export class NavbarComponent implements OnInit, OnDestroy, DoCheck {
 
   data;
   subscription;
   lang;
   frenchData;
+
+  customStickyLogic: boolean;
   
   constructor(
     private productsService: ProductsService,
     private translate: TranslateService,
-    private languageService: LanguageService
+    private languageService: LanguageService,
+    private window: Window
     ) { 
       this.subscription = this.languageService.getLanguage()
     .subscribe(lang => this.lang = lang);
@@ -37,6 +40,8 @@ export class NavbarComponent implements OnInit, OnDestroy {
       this.frenchData = data;
     })
   }
+  
+  ngDoCheck(){ }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();

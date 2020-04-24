@@ -56,7 +56,7 @@ import { MatTabsModule } from '@angular/material/tabs';
         }
     })
   ],
-  providers: [ ],
+  providers: [ {provide: Window, useValue: window} ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
