@@ -13,6 +13,10 @@ export class ProductsService {
     return this.http.get('./assets/data/mock-products.json');
   }
 
+  getFrenchData() {
+    return this.http.get('./assets/data/mock-products-fr.json');
+  }
+
   getSegments() {
     let segments = [];
     let retrievedData;
@@ -40,13 +44,8 @@ export class ProductsService {
     })
     console.log(segments);
     segments.forEach(element => {
-    console.log(element);
-        /*segment = segments.find(element => element.name == paramsName); 
-        if (segment) {
-          console.log(segment);
-          return(segment);
-        }*/
-      })
+      console.log(element);
+    })
   }
 
   getProducts(): Observable<any> {

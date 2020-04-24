@@ -15,33 +15,16 @@
 </owl-carousel>
 <br>
 
-<div class="site-section">
-  <div class="container">
-    <mat-tab-group>
-      <mat-tab label="All">
-        <div class="products row">
-          <div *ngFor="let product of products" class="col-lg-3 col-md-6 mb-5">
-            <div class="post-entry-1 h-100">
-              <a [routerLink]="['/products', product.segment]">
-                <img [src]="product.photoUrl" alt="Image" class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                <a [routerLink]="['/products', product.segment]"><h2 class="product-header">{{product.name}}</h2></a>
-                <span class="meta">{{product.packaging}}</span>
-                <p class="my-3"><a [routerLink]="['/products', product.segment]" class="more-39291">En savoir plus</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </mat-tab>
-      <mat-tab *ngFor="let category of data" label="{{category.label}}">
-        <div class="products row">
-          <ng-container *ngFor="let segment of category.elements">
-            <div *ngFor=" let product of segment.products" class="col-lg-3 col-md-6 mb-5">
+<ng-container *ngIf="lang === 'en'">
+  <div class="site-section">
+    <div class="container">
+      <mat-tab-group>
+        <mat-tab label="All">
+          <div class="products row">
+            <div *ngFor="let product of products" class="col-lg-3 col-md-6 mb-5">
               <div class="post-entry-1 h-100">
                 <a [routerLink]="['/products', product.segment]">
-                  <img [src]="product.photoUrl" alt="Image"
-                  class="img-fluid">
+                  <img [src]="product.photoUrl" alt="Image" class="img-fluid">
                 </a>
                 <div class="post-entry-1-contents">
                   <a [routerLink]="['/products', product.segment]"><h2 class="product-header">{{product.name}}</h2></a>
@@ -50,9 +33,72 @@
                 </div>
               </div>
             </div>
-          </ng-container>
-        </div>
-      </mat-tab>
-    </mat-tab-group>
+          </div>
+        </mat-tab>
+        <mat-tab *ngFor="let category of data" label="{{category.label}}">
+          <div class="products row">
+            <ng-container *ngFor="let segment of category.elements">
+              <div *ngFor=" let product of segment.products" class="col-lg-3 col-md-6 mb-5">
+                <div class="post-entry-1 h-100">
+                  <a [routerLink]="['/products', product.segment]">
+                    <img [src]="product.photoUrl" alt="Image"
+                    class="img-fluid">
+                  </a>
+                  <div class="post-entry-1-contents">
+                    <a [routerLink]="['/products', product.segment]"><h2 class="product-header">{{product.name}}</h2></a>
+                    <span class="meta">{{product.packaging}}</span>
+                    <p class="my-3"><a [routerLink]="['/products', product.segment]" class="more-39291">Find out more</a></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
   </div>
-</div>
+</ng-container>
+
+<ng-container *ngIf="lang === 'fr'">
+  <div class="site-section">
+    <div class="container">
+      <mat-tab-group>
+        <mat-tab label="Tout">
+          <div class="products row">
+            <div *ngFor="let product of frenchProducts" class="col-lg-3 col-md-6 mb-5">
+              <div class="post-entry-1 h-100">
+                <a [routerLink]="['/products', product.segment]">
+                  <img [src]="product.photoUrl" alt="Image" class="img-fluid">
+                </a>
+                <div class="post-entry-1-contents">
+                  <a [routerLink]="['/products', product.segment]"><h2 class="product-header">{{product.name}}</h2></a>
+                  <span class="meta">{{product.packaging}}</span>
+                  <p class="my-3"><a [routerLink]="['/products', product.segment]" class="more-39291">En savoir plus</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab *ngFor="let category of frenchData" label="{{category.label}}">
+          <div class="products row">
+            <ng-container *ngFor="let segment of category.elements">
+              <div *ngFor=" let product of segment.products" class="col-lg-3 col-md-6 mb-5">
+                <div class="post-entry-1 h-100">
+                  <a [routerLink]="['/products', product.segment]">
+                    <img [src]="product.photoUrl" alt="Image"
+                    class="img-fluid">
+                  </a>
+                  <div class="post-entry-1-contents">
+                    <a [routerLink]="['/products', product.segment]"><h2 class="product-header">{{product.name}}</h2></a>
+                    <span class="meta">{{product.packaging}}</span>
+                    <p class="my-3"><a [routerLink]="['/products', product.segment]" class="more-39291">En savoir plus</a></p>
+                  </div>
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</ng-container>

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { of } from 'rxjs';
+import { LanguageService } from 'src/app/core/services/language.service';
 
 @Component({
   selector: 'app-topbar',
@@ -9,21 +9,18 @@ import { of } from 'rxjs';
 })
 export class TopbarComponent implements OnInit {
 
-  constructor(private translate: TranslateService) { }
+  constructor(private translate: TranslateService, private languageService: LanguageService) { }
 
-  lang;
+  lang="fr";
 
   useLanguage(language: string) {
     this.translate.use(language);
     this.lang = language;
-  }
-
-  getLanguage() {
-    return of(this.lang);
+    this.languageService.switchLanguage(this.lang);
   }
 
   ngOnInit() {
-    console.log(this.translate.langs);
+    this.languageService.switchLanguage(this.lang);
   }
 
 }

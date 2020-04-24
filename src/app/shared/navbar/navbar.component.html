@@ -1,4 +1,4 @@
-<!--<ng-container *ngIf="lang === 'en'">-->
+<ng-container *ngIf="lang === 'en'">
 <header class="site-navbar site-navbar-target" role="banner" id="header">
 
   <div class="container">
@@ -57,7 +57,7 @@
   </div>
 
 </header>
-<!--</ng-container>
+</ng-container>
 
 
 <ng-container *ngIf="lang == 'fr'">
@@ -73,7 +73,7 @@
   
               <li class="drop-down"><a [routerLink]="['/products']">Produits</a>
                 <ul>
-                  <li class="drop-down" *ngFor="let category of data">
+                  <li class="drop-down" *ngFor="let category of frenchData">
                     <a>
                       {{category.name}}
                     </a>
@@ -119,4 +119,4 @@
     </div>
   
   </header>
-</ng-container>-->
+</ng-container>
