@@ -11,7 +11,7 @@
         "firstTitle": "Bienvenue chez",
         "firstTitleSpan": "Tazart",
         "firstSubtitle": "Les fruits du désert",
-        "secondTitle": "The désert attire",
+        "secondTitle": "Le désert attire",
         "secondTitleSpan": "le nomad",
         "secondSubtitle": "L'ocean, le Matelot. L'infini, le Poète",
         "findus": "Trouvez nos produits chez"
@@ -47,5 +47,11 @@
     "news": {
         "title": "Actualités de",
         "subtitle": "Restez à jour avec Tazart"
+    },
+    "products": {
+        "title": "Tout les produits de"
+    },
+    "professional": {
+        "title": "Les fiches techniques des produits de"
     }
 }

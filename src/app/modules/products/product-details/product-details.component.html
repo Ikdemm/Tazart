@@ -1,4 +1,4 @@
-<owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+<owl-carousel [options]="slideOptionsHeader" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
   <div class="item">
     <div class="ftco-blocks-cover-1">
       <div class="ftco-cover-1" [ngStyle]="{'background-image': 'url(' + 'assets/img/background6.webp' + ')'}">
@@ -24,7 +24,7 @@
   <div class="container">
     <div class="row product">
       <div class="col-md-5 text-center">
-        <owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+        <owl-carousel [options]="slideOptionsProduct" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
           <div *ngFor="let product of products"class="item">
             <div class="product-2">
               <img src="{{product.photoRawUrl}}" class="product-image">

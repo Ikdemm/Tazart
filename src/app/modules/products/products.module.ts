@@ -7,8 +7,12 @@ import { ProductDetailsComponent } from './product-details/product-details.compo
 
 import { SharedModule } from '../../shared/shared.module';
 
-import { MatTabsModule } from '@angular/material/tabs'
+import { MatTabsModule } from '@angular/material/tabs';
 
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 
 @NgModule({
@@ -17,7 +21,20 @@ import { MatTabsModule } from '@angular/material/tabs'
     CommonModule,
     ProductsRoutingModule,
     SharedModule,
-    MatTabsModule
+    MatTabsModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+        loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+        }
+    })
   ]
 })
+
 export class ProductsModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

@@ -10,6 +10,10 @@ import { MatTabsModule } from '@angular/material/tabs';
 
 import { NgxSpinnerModule } from "ngx-spinner";
 
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [ProfessionalDetailsComponent, ProfessionalListComponent],
@@ -18,7 +22,19 @@ import { NgxSpinnerModule } from "ngx-spinner";
     MatTabsModule,
     SharedModule,
     ProfessionalRoutingModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+        loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+        }
+    })
   ]
 })
 export class ProfessionalModule { }
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

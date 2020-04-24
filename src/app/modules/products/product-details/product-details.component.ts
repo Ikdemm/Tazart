@@ -1,28 +1,36 @@
-import { Component, OnInit } from '@angular/core';
-import { Router, ActivatedRoute, Params } from '@angular/router';
-import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS } from '../../../shared/constants';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
+import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS, SLIDE_OPTIONS } from '../../../shared/constants';
 import { ProductsService } from 'src/app/core/services/products.service';
+import { LanguageService } from 'src/app/core/services/language.service';
 
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css']
 })
-export class ProductDetailsComponent implements OnInit {
+export class ProductDetailsComponent implements OnInit, OnDestroy {
 
   segmentName;
   segments;
   segment;
   products = [];
   data;
+  frenchData;
+  subscription;
+  lang;
 
-  slideOptions = NO_SLIDE_OPTIONS;
+  slideOptionsProduct = SLIDE_OPTIONS;
+  slideOptionsHeader = NO_SLIDE_OPTIONS;
   carouselOptions = CAROUSEL_OPTIONS;
 
   constructor(
     private route: ActivatedRoute,
-    private router: Router,
-    private productsService: ProductsService) { }
+    private languageService: LanguageService,
+    private productsService: ProductsService) { 
+      this.subscription = this.languageService.getLanguage()
+    .subscribe(lang => this.lang = lang);
+  }
 
 
   fetchProducts() {
@@ -32,7 +40,10 @@ export class ProductDetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.productsService.getData().subscribe(data => {
+
+    this.languageService.getLanguage().subscribe(lang => {this.lang = lang; console.log(this.lang)});
+
+    this.productsService.getAllData().subscribe(data => {
       this.data = data;
       this.route.params
       .subscribe(
@@ -52,6 +63,10 @@ export class ProductDetailsComponent implements OnInit {
           });
       })
     })
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 }

@@ -1,3 +1,4 @@
+<app-topbar></app-topbar>
 <owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
   <div class="item">
     <div class="ftco-blocks-cover-1">
@@ -5,8 +6,8 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-10 text-center">
-              <h1 class="header-title">The techincal sheets of all our 
-                <span class="text-primary header-title-span"> Products</span>
+              <h1 class="header-title">{{ "professional.title" | translate }}
+                <span class="text-primary header-title-span"> Tazart</span>
               </h1>
             </div>
           </div>
@@ -17,33 +18,16 @@
 </owl-carousel>
 <br>
 
-<div class="site-section">
-  <div class="container">
-    <mat-tab-group>
-      <mat-tab label="All">
-        <div class="products row">
-          <div *ngFor=" let product of products" class="col-lg-3 col-md-6 mb-5">
-            <div class="post-entry-1 h-100">
-              <a [routerLink]="['/professional', product.designation]">
-                <img [src]="product.photoUrl" alt="Image" class="img-fluid">
-              </a>
-              <div class="post-entry-1-contents">
-                <a [routerLink]="['/professional', product.designation]"><h2 class="product-header">{{product.name}}</h2></a>
-                <span class="meta">{{product.packaging}}</span>
-                <p class="my-3"><a [routerLink]="['/professional', product.designation]" class="more-39291">See technical sheet</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </mat-tab>
-      <mat-tab *ngFor="let category of data" label="{{category.label}}">
-        <div class="products row">
-          <ng-container *ngFor="let segment of category.elements">
-            <div *ngFor=" let product of segment.products" class="col-lg-3 col-md-6 mb-5">
+<ng-container *ngIf="lang === 'en'">
+  <div class="site-section">
+    <div class="container">
+      <mat-tab-group>
+        <mat-tab label="All">
+          <div class="products row">
+            <div *ngFor=" let product of products" class="col-lg-3 col-md-6 mb-5">
               <div class="post-entry-1 h-100">
                 <a [routerLink]="['/professional', product.designation]">
-                  <img [src]="product.photoUrl" alt="Image"
-                  class="img-fluid">
+                  <img [src]="product.photoUrl" alt="Image" class="img-fluid">
                 </a>
                 <div class="post-entry-1-contents">
                   <a [routerLink]="['/professional', product.designation]"><h2 class="product-header">{{product.name}}</h2></a>
@@ -52,9 +36,82 @@
                 </div>
               </div>
             </div>
-          </ng-container>
-        </div>
-      </mat-tab>
-    </mat-tab-group>
+          </div>
+        </mat-tab>
+        <mat-tab *ngFor="let category of data" label="{{category.label}}">
+          <div class="products row">
+            <ng-container *ngFor="let segment of category.elements">
+              <div *ngFor=" let product of segment.products" class="col-lg-3 col-md-6 mb-5">
+                <ng-container *ngIf="product.technicalSheet">  
+                  <div class="post-entry-1 h-100">
+                    <a [routerLink]="['/professional', product.designation]">
+                      <img [src]="product.photoUrl" alt="Image"
+                      class="img-fluid">
+                    </a>
+                    <div class="post-entry-1-contents">
+                      <a [routerLink]="['/professional', product.designation]"><h2 class="product-header">{{product.name}}</h2></a>
+                      <span class="meta">{{product.packaging}}</span>
+                      <p class="my-3"><a [routerLink]="['/professional', product.designation]" class="more-39291">See technical sheet</a></p>
+                    </div>
+                  </div>
+                </ng-container>
+                <ng-container *ngIf="!product.technicalSheet">
+                  <p style="padding-top: 1em;">Technical sheet not ready yet ...</p>
+                </ng-container>
+              </div>
+            </ng-container>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
   </div>
-</div>
+</ng-container>
+
+<ng-container *ngIf="lang === 'fr'">
+  <div class="site-section">
+    <div class="container">
+      <mat-tab-group>
+        <mat-tab label="All">
+          <div class="products row">
+            <div *ngFor=" let product of frenchProducts" class="col-lg-3 col-md-6 mb-5">
+              <div class="post-entry-1 h-100">
+                <a [routerLink]="['/professional', product.designation]">
+                  <img [src]="product.photoUrl" alt="Image" class="img-fluid">
+                </a>
+                <div class="post-entry-1-contents">
+                  <a [routerLink]="['/professional', product.designation]"><h2 class="product-header">{{product.name}}</h2></a>
+                  <span class="meta">{{product.packaging}}</span>
+                  <p class="my-3"><a [routerLink]="['/professional', product.designation]" class="more-39291">See technical sheet</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </mat-tab>
+        <mat-tab *ngFor="let category of frenchData" label="{{category.label}}">
+          <div class="products row">
+            <ng-container *ngFor="let segment of category.elements">
+              <div *ngFor=" let product of segment.products" class="col-lg-3 col-md-6 mb-5">
+                <ng-container *ngIf="product.technicalSheet">
+                  <div class="post-entry-1 h-100">
+                    <a [routerLink]="['/professional', product.designation]">
+                      <img [src]="product.photoUrl" alt="Image"
+                      class="img-fluid">
+                    </a>
+                    <div class="post-entry-1-contents">
+                      <a [routerLink]="['/professional', product.designation]"><h2 class="product-header">{{product.name}}</h2></a>
+                      <span class="meta">{{product.packaging}}</span>
+                      <p class="my-3"><a [routerLink]="['/professional', product.designation]" class="more-39291">See technical sheet</a></p>
+                    </div>
+                  </div>
+                </ng-container>
+                <ng-container *ngIf="!product.technicalSheet">
+                  <p style="padding-top: 1em;">Fiche technique pas encore prête ...</p>
+                </ng-container>
+              </div>
+            </ng-container>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</ng-container>

@@ -48,13 +48,13 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatTabsModule,
     NgxSpinnerModule,
     HttpClientModule,
-        TranslateModule.forRoot({
-            loader: {
-                provide: TranslateLoader,
-                useFactory: HttpLoaderFactory,
-                deps: [HttpClient]
-            }
-        })
+    TranslateModule.forRoot({
+        loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+        }
+    })
   ],
   providers: [ ],
   bootstrap: [AppComponent]

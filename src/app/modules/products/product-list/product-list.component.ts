@@ -22,9 +22,12 @@ export class ProductListComponent implements OnInit, OnDestroy {
   lang: string;
   subscription;
 
-  constructor(private productService: ProductsService, private languageService: LanguageService) {
+  constructor(private productService: ProductsService,
+    private languageService: LanguageService,
+    private translate: TranslateService) {
     this.subscription = this.languageService.getLanguage()
-    .subscribe(lang => this.lang = lang); 
+    .subscribe(lang => this.lang = lang);
+    this.useLanguage(this.lang);
   }
 
   ngOnInit() {
@@ -36,6 +39,10 @@ export class ProductListComponent implements OnInit, OnDestroy {
       this.frenchData = data;
       this.getFrenchProducts();
     })
+  }
+
+  useLanguage(language: string) {
+    this.translate.use(language);
   }
 
   getProducts() {

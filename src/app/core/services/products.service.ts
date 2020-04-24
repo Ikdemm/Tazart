@@ -17,6 +17,10 @@ export class ProductsService {
     return this.http.get('./assets/data/mock-products-fr.json');
   }
 
+  getAllData() {
+    return this.http.get('./assets/data/mock-products-all.json');
+  }
+
   getSegments() {
     let segments = [];
     let retrievedData;

@@ -4,6 +4,8 @@ import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS} from 'src/app/shared/constants';
 import { ActivatedRoute, Params } from '@angular/router';
 
 import { NgxSpinnerService } from "ngx-spinner";
+import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/core/services/language.service';
 
 @Component({
   selector: 'app-professional-details',
@@ -12,21 +14,28 @@ import { NgxSpinnerService } from "ngx-spinner";
 })
 export class ProfessionalDetailsComponent implements OnInit {
 
-  product;
-  products = [];
   data;
-  
-  slideOptions = NO_SLIDE_OPTIONS;
+  subscription;
+  lang;
+  product;
+
+  slideOptionsHeader = NO_SLIDE_OPTIONS;
   carouselOptions = CAROUSEL_OPTIONS;
 
   constructor(
     private route: ActivatedRoute,
+    private translate: TranslateService,
     private spinner: NgxSpinnerService,
-    private productsService: ProductsService) { }
+    private languageService: LanguageService,
+    private productsService: ProductsService) { 
+      this.subscription = this.languageService.getLanguage()
+    .subscribe(lang => this.lang = lang);
+    this.useLanguage(this.lang);
+  }
 
   ngOnInit() {
     this.spinner.show();
-    this.productsService.getData().subscribe(data => {
+    this.productsService.getAllData().subscribe(data => {
       this.data = data;
       this.route.params
       .subscribe(
@@ -49,6 +58,14 @@ export class ProfessionalDetailsComponent implements OnInit {
           });
       })
     })
+  }
+
+  useLanguage(language: string) {
+    this.translate.use(language);
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 }

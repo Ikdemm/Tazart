@@ -47,5 +47,11 @@
     "news": {
         "title": "News of",
         "subtitle": "stay up to date with Tazart"
-    }    
+    },
+    "products": {
+        "title": "All the products"
+    },    
+    "professional": {
+        "title": "The Technical sheets of the products of"
+    }
 }

@@ -1,19 +1,18 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
-export class NewsService implements OnInit {
+export class NewsService {
 
-  news;
 
   getNews() {
     return this.http.get('assets/data/mock-news.json');
   }
 
-  ngOnInit() {
-    this.getNews;
+  getFrenchNews() {
+    return this.http.get('assets/data/mock-news-fr.json');
   }
 
   constructor(private http: HttpClient) { }
