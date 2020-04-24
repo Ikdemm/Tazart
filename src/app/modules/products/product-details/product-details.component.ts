@@ -1,6 +1,6 @@
-import { Component, OnInit, ɵConsole} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-import { CAROUSEL_OPTIONS, SLIDE_OPTIONS} from '../../../shared/constants';
+import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS } from '../../../shared/constants';
 import { ProductsService } from 'src/app/core/services/products.service';
 
 @Component({
@@ -16,7 +16,7 @@ export class ProductDetailsComponent implements OnInit {
   products = [];
   data;
 
-  slideOptions = SLIDE_OPTIONS;
+  slideOptions = NO_SLIDE_OPTIONS;
   carouselOptions = CAROUSEL_OPTIONS;
 
   constructor(

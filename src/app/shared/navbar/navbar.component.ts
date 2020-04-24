@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/core/services/products.service';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-navbar',
@@ -9,8 +11,17 @@ import { ProductsService } from 'src/app/core/services/products.service';
 export class NavbarComponent implements OnInit {
 
   data;
+
+  //lang = "fr";
   
-  constructor(private productsService: ProductsService) { }
+  constructor(private productsService: ProductsService,
+    private translate: TranslateService) { 
+      this.translate.setDefaultLang('fr');
+    }
+
+  useLanguage(language: string) {
+    this.translate.use(language);
+  }
 
   ngOnInit() {
     this.productsService.getData().subscribe(data => {

@@ -1,0 +1,51 @@
+{
+    "navbar": {
+        "about": "A propos",
+        "products": "Produits",
+        "resellers": "Revendeurs",
+        "professional": "Professionel",
+        "news": "Actualités",
+        "contact": "Contact"
+    },
+    "home": {
+        "firstTitle": "Bienvenue chez",
+        "firstTitleSpan": "Tazart",
+        "firstSubtitle": "Les fruits du désert",
+        "secondTitle": "The désert attire",
+        "secondTitleSpan": "le nomad",
+        "secondSubtitle": "L'ocean, le Matelot. L'infini, le Poète",
+        "findus": "Trouvez nos produits chez"
+    },
+    "about": {
+        "title": "A propos",
+        "subtitle": "Découvrer un peu plus à propos Tazart",
+        "header1": "UN PEU PLUS A PROPOS TAZART",
+        "paragraph1": "Tazart est une entreprise sociale de séchage et de conditionnement de fruits, spécialisée dans les dattes et les figues séchées, Des figues et des dattes qui sont produites dans les meilleures conditions en Tunisie pour garantir à nos clients un gout et une qualité supérieurs.",
+        "paragraph2": "Tazart revisite nos produits locaux pour offrir à ses consommateurs une expérience culinaire à la fois authentique et exceptionnelle.",
+        "header2": "BIEN PLUS QU’UN SIMPLE FRUIT",
+        "paragraph3": "La figue fait partie intégrante de la culture berbère et est appelée dans tout l’ensemble berbérophone Tazart, d’où vient le nom de notre entreprise.",
+        "paragraph4": "C’est au cœur de la production traditionnelle et authentique Tunisienne que la marque TAZART a été créée offrant au consommateur une expérience culinaire exceptionnelle à base de dattes et de figues séchées. TAZART est construite autour de 3 axes : La responsabilité sociale, la valorisation des produits locaux et la valeur alimentaire. Nous accompagnons en effet, un réseau d’agriculteurs du sud tunisien depuis la plantation et l’entretien de figuier et du dattier jusqu’à la cueillette.",
+        "paragraph5": "Pour les figues, la récolte passe au séchage via des techniques modernes et adaptées aux normes d’hygiène en vigueur pour passer par la suite à l’étape du conditionnement à l’instar de nos dattes naturelles ‘’Deglet Nour’’, en vue d’être commercialisées sur plusieurs formes dans un réseau de plus de 70 distributeurs.",
+        "header3": "NOS VALEURS",
+        "paragraph6": "Comme la richesse est avant tout humaine, Tazart rassemble un groupe de femmes et des hommes construisant chaque jour son succès, travaillant en synergie tout en étant attachés aux valeurs qui concrétisent leur réussite : respect de l’autre, partage, dépassement du soi, engagement et richesse du collectif. En un seul mot ‘’l’humain’’ est placé au cœur du fonctionnement de Tazart, commençant par les producteurs, passant par les collaborateurs jusqu’ à arriver aux clients."
+    },
+    "resellers": {
+        "title": "Trouver nos produits chez ces",
+        "span": "Revendeurs",
+        "subtitle": "Tazart est toujours proche de vous"
+    },
+    "contact": {
+        "title": "Contactez Tazart",
+        "span": "Maintenant!",
+        "subtitle": "Tazart est toujours proche de vous",
+        "subject": "Sujet",
+        "message": "Votre message",
+        "send": "Envoyer",
+        "phone": "Téléphone",
+        "contact": "Coordonnées"
+    },
+    "news": {
+        "title": "Actualités de",
+        "subtitle": "Restez à jour avec Tazart"
+    }
+}

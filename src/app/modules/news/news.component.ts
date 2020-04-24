@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NewsService } from 'src/app/core/services/news.service';
-import { CAROUSEL_OPTIONS, SLIDE_OPTIONS} from '../../shared/constants';
+import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS} from '../../shared/constants';
 
 @Component({
   selector: 'app-news',
@@ -9,7 +9,7 @@ import { CAROUSEL_OPTIONS, SLIDE_OPTIONS} from '../../shared/constants';
 })
 export class NewsComponent implements OnInit {
 
-  slideOptions = SLIDE_OPTIONS;
+  slideOptions = NO_SLIDE_OPTIONS;
   carouselOptions = CAROUSEL_OPTIONS;
 
   news;

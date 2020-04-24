@@ -1,20 +1,3 @@
-<!--<owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
-  <div class="item" *ngFor="let slide of slides;let i = index">
-      <div class="ftco-blocks-cover-1">
-          <div class="ftco-cover-1" [ngStyle]="{'background-image': 'url(' + slide.background + ')'}">
-              <div class="container">
-                  <div class="row align-items-center justify-content-center">
-                      <div class="col-lg-10 text-center">
-                          <h1 class="header-title">{{slide.header}}</h1>
-                          <p class="background1-text">{{slide.text}}</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</owl-carousel>-->
-
 <owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
   <div class="item">
     <div class="ftco-blocks-cover-1">
@@ -22,7 +5,8 @@
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-10 text-center">
-              <h1 class="header-title">Contact <span class="text-primary header-title-span">Tazart</span></h1>
+              <h1 class="header-title">{{ "contact.title" | translate }} <span class="text-primary header-title-span">{{ "contact.span" | translate }}</span></h1>
+              <p class="background1-text">{{ 'contact.subtitle' | translate }}</p>
             </div>
           </div>
         </div>
@@ -46,18 +30,18 @@
             
             <div class="form-group row">
               <div class="col-md-12">
-                <input type="text" name="sujet" id="subject" class="form-control" placeholder="Sujet">
+                <input type="text" name="sujet" id="subject" class="form-control" placeholder="{{ 'contact.subject' | translate }}">
               </div>
             </div>
 
             <div class="form-group row">
               <div class="col-md-12">
-                <textarea name="message" id="message" class="form-control" placeholder="Votre Message" cols="30" rows="10"></textarea>
+                <textarea name="message" id="message" class="form-control" placeholder="{{ 'contact.message' | translate }}" cols="30" rows="10"></textarea>
               </div>
             </div>
             <div class="form-group row">
               <div class="col-md-6 mr-auto">
-                <input type="button" class="btn btn-block btn-primary btn-contact text-white py-3 px-5" id="sendButton" value="Envoyer">
+                <input type="button" class="btn btn-block btn-primary btn-contact text-white py-3 px-5" id="sendButton" value="{{ 'contact.send' | translate }}">
                 <!--<input type="submit" class="btn btn-block btn-primary btn-contact text-white py-3 px-5" value="Envoyer">-->
               </div>
             </div>
@@ -65,11 +49,11 @@
         </div>
         <div class="col-lg-4 ml-auto">
           <div class="bg-white p-3 p-md-5">
-            <h3 class="text-black mb-4">Coordonnées</h3>
+            <h3 class="text-black mb-4">{{ "contact.contact" | translate }}</h3>
             <ul class="list-unstyled footer-link">
               <li class="d-block mb-3">
                 <span>Tazart</span></li>
-              <li class="d-block mb-3"><span class="d-block text-black">Téléphone:</span><span>+216 27 968 339</span></li>
+              <li class="d-block mb-3"><span class="d-block text-black">{{ 'contact.phone' | translate }}</span><span>+216 27 968 339</span></li>
               <li class="d-block mb-3"><span class="d-block text-black">Email:</span><span>contact@tazart.tn</span></li>
             </ul>
           </div>

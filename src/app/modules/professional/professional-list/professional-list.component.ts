@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CAROUSEL_OPTIONS, SLIDE_OPTIONS} from 'src/app/shared/constants';
+import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS } from 'src/app/shared/constants';
 import { ProductsService } from 'src/app/core/services/products.service';
 
 @Component({
@@ -13,7 +13,7 @@ export class ProfessionalListComponent implements OnInit {
   products = [];
   data;
 
-  slideOptions = SLIDE_OPTIONS;
+  slideOptions = NO_SLIDE_OPTIONS;
   carouselOptions = CAROUSEL_OPTIONS;
 
   constructor(private productsService: ProductsService) { }

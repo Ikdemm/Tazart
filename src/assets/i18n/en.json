@@ -1,0 +1,51 @@
+{
+    "navbar": {
+        "about": "About",
+        "products": "Products",
+        "resellers": "Resellers",
+        "professional": "Professional",
+        "news": "News",
+        "contact": "Contact"
+    },    
+    "home": {
+        "firstTitle": "Welcome to",
+        "firstTitleSpan": "Tazart",
+        "firstSubtitle": "The fruits of the desert",
+        "secondTitle": "The desert attracts",
+        "secondTitleSpan": "the nomad",
+        "secondSubtitle": "The ocean, the Sailor. The infinit, the Poet",
+        "findus": "Find our products at"
+    },
+    "about": {
+        "title": "About",
+        "subtitle": "Get to know some more about Tazart",
+        "header1": "MORE ABOUT TAZART",
+        "paragraph1": "Tazart, a social company created in 2015 specialized in drying and packaging of figs and packaging of natural dates.",
+        "paragraph2": "Our figs and dates have been produced under the best condition in Tunisia to guarantee the best taste and quality.",
+        "header2": "MORE THAN JUST A FRUIT",
+        "paragraph3": "The fig is an integral part of the Berber culture. It’s called Tazart which is also the name of our company.", 
+        "paragraph4": "It’s at the heart of the traditional and authentic Tunisian production, that the brand TAZART was created offering an exceptional culinary experience based on dates and dried figs for the consumer. TAZART is built around 3 pillars: Social responsibility, valuing local products and nutritional value.",
+        "paragraph5": "We support a network of farmers in southern Tunisia since the fig tree and palm dates planting until the picking. Drying of figs harvest is done by modern techniques which comply with hygiene standards. As a final step, it goes directly to the packaging same as our natural dates ‘’Deglet Nour‘’ to be ready for distribution in the market.",
+        "header3": "OUR VALUES",
+        "paragraph6": "Because wealth is human, Tazart is moulded in the image of a group of women and men who work together toward its growth and success each day. Women and men who are deeply devoted to its core values: respect each other, sharing, surpassing oneself and commitment. To conclude, people represents the heart of Tazart process by building trusting relationships with its stakeholders: Producers, collaborators and customers."
+    },
+    "resellers": {
+        "title": "Find our Products at these",
+        "span": "Addresses",
+        "subtitle": "Tazart always close to you"
+    },
+    "contact": {
+        "title": "Contact Tazart",
+        "span": "Now!",
+        "subtitle": "Tazart always close to you",
+        "subject": "Subject",
+        "message": "Your message",
+        "send": "Send",
+        "contact": "Contact",
+        "phone": "Phone"
+    },
+    "news": {
+        "title": "News of",
+        "subtitle": "stay up to date with Tazart"
+    }    
+}

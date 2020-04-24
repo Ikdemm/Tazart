@@ -8,6 +8,16 @@ export const SLIDE_OPTIONS = {
     loop: true
 };
 
+export const NO_SLIDE_OPTIONS = {
+    items: 1, 
+    dots: false, 
+    nav: false, 
+    autoplay: false,
+    fluidSpeed: false,
+    loop: false,
+    mouseDrag: false,
+};
+
 export const CAROUSEL_OPTIONS = {
     items: 2,
     dots: true,

@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { CAROUSEL_OPTIONS, SLIDE_OPTIONS} from '../../../shared/constants';
+import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS} from '../../../shared/constants';
 import { ProductsService } from 'src/app/core/services/products.service';
 
 
@@ -11,7 +11,7 @@ import { ProductsService } from 'src/app/core/services/products.service';
 })
 export class ProductListComponent implements OnInit {
 
-  slideOptions = SLIDE_OPTIONS;
+  slideOptions = NO_SLIDE_OPTIONS;
   carouselOptions = CAROUSEL_OPTIONS;
 
   products = [];

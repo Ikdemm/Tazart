@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from 'src/app/core/services/products.service';
-import { CAROUSEL_OPTIONS, SLIDE_OPTIONS} from 'src/app/shared/constants';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS} from 'src/app/shared/constants';
+import { ActivatedRoute, Params } from '@angular/router';
 
 import { NgxSpinnerService } from "ngx-spinner";
 
@@ -16,7 +16,7 @@ export class ProfessionalDetailsComponent implements OnInit {
   products = [];
   data;
   
-  slideOptions = SLIDE_OPTIONS;
+  slideOptions = NO_SLIDE_OPTIONS;
   carouselOptions = CAROUSEL_OPTIONS;
 
   constructor(

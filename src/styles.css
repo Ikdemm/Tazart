@@ -1738,7 +1738,7 @@ html {
     color: #000;
     font-family: 'Cabin Sketch', cursive !important;
     width: 100%;
-    font-size: 3.5em;
+    font-size: 3em;
   }
   
   .background1-text, .background2-text {
@@ -1784,6 +1784,7 @@ html {
   
   .header-title-contact {
     color: black;
+    font-size: 3.5em !important;
   }
   
   .text-primary-contact {
@@ -1813,6 +1814,12 @@ html {
     font-family: 'Cabin Sketch', cursive !important;
   }
   
+  .header-title-news {
+    color: #000;
+    font-size: 3.5em !important;
+    font-family: 'Cabin Sketch', cursive !important;
+  }
+
   .about-image {
     height: 90%;
     width: 100%;

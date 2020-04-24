@@ -1,28 +1,12 @@
-<!--<owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
-  <div class="item" *ngFor="let slide of slides;let i = index">
-      <div class="ftco-blocks-cover-1">
-          <div class="ftco-cover-1" [ngStyle]="{'background-image': 'url(' + slide.background + ')'}">
-              <div class="container">
-                  <div class="row align-items-center justify-content-center">
-                      <div class="col-lg-10 text-center">
-                          <h1 class="header-title">{{slide.header}}</h1>
-                          <p class="background1-text">{{slide.text}}</p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </div>
-</owl-carousel>-->
-
-<owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+<owl-carousel [options]="slideOptions" [items]="images" [carouselClasses]="['owl-theme']" >
   <div class="item">
     <div class="ftco-blocks-cover-1">
       <div class="ftco-cover-1" [ngStyle]="{'background-image': 'url(' + 'assets/img/background6.webp' + ')'}">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-lg-10 text-center">
-              <h1 class="header-title">News of <span class="text-primary header-title-span">Tazart</span></h1>
+              <h1 class="header-title-news">{{ "news.title" | translate }} <span class="text-primary header-title-span">Tazart</span></h1>
+              <p class="background1-text">{{ 'news.subtitle' | translate }}</p>
             </div>
           </div>
         </div>
