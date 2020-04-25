@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NewsService } from 'src/app/core/services/news.service';
 import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS} from '../../shared/constants';
 import { LanguageService } from 'src/app/core/services/language.service';
@@ -8,7 +8,7 @@ import { LanguageService } from 'src/app/core/services/language.service';
   templateUrl: './news.component.html',
   styleUrls: ['./news.component.css']
 })
-export class NewsComponent implements OnInit {
+export class NewsComponent implements OnInit, OnDestroy {
 
   slideOptions = NO_SLIDE_OPTIONS;
   carouselOptions = CAROUSEL_OPTIONS;
@@ -18,7 +18,7 @@ export class NewsComponent implements OnInit {
   lang;
   subscription;
 
-  constructor( private newsService: NewsService, private languageService: LanguageService) { 
+  constructor(private newsService: NewsService, private languageService: LanguageService) { 
     this.subscription = this.languageService.getLanguage()
     .subscribe(lang => this.lang = lang);
   }
@@ -30,6 +30,10 @@ export class NewsComponent implements OnInit {
     this.newsService.getFrenchNews().subscribe( data => {
       this.frenchNews = data;
     }); 
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
   }
 
 }

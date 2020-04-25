@@ -11,16 +11,18 @@ export class TopbarComponent implements OnInit {
 
   constructor(private translate: TranslateService, private languageService: LanguageService) { }
 
-  lang="fr";
+  lang;
 
   useLanguage(language: string) {
-    this.translate.use(language);
     this.lang = language;
+    this.translate.use(this.lang);
     this.languageService.switchLanguage(this.lang);
   }
 
   ngOnInit() {
-    this.languageService.switchLanguage(this.lang);
+    this.languageService.getLanguage().subscribe(lang => {
+      this.lang = lang;
+    })
   }
 
 }

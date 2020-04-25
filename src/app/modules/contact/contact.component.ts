@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-//import { BACKGROUNDS } from '../shared/constants';
 import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS} from '../../shared/constants';
 
 @Component({

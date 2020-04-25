@@ -8,28 +8,19 @@ import { LanguageService } from 'src/app/core/services/language.service';
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
-export class NavbarComponent implements OnInit, OnDestroy, DoCheck {
+export class NavbarComponent implements OnInit, OnDestroy{
 
   data;
   subscription;
   lang;
   frenchData;
-
-  customStickyLogic: boolean;
   
   constructor(
     private productsService: ProductsService,
-    private translate: TranslateService,
-    private languageService: LanguageService,
-    private window: Window
+    private languageService: LanguageService
     ) { 
       this.subscription = this.languageService.getLanguage()
     .subscribe(lang => this.lang = lang);
-    this.useLanguage(this.lang);
-    }
-
-  useLanguage(language: string) {
-    this.translate.use(language);
   }
 
   ngOnInit() {
@@ -40,8 +31,6 @@ export class NavbarComponent implements OnInit, OnDestroy, DoCheck {
       this.frenchData = data;
     })
   }
-  
-  ngDoCheck(){ }
 
   ngOnDestroy() {
     this.subscription.unsubscribe();

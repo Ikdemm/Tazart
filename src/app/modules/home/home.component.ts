@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CAROUSEL_OPTIONS, SLIDE_OPTIONS} from '../../shared/constants';
-import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
@@ -13,7 +13,6 @@ export class HomeComponent implements OnInit {
   carouselOptions = CAROUSEL_OPTIONS;
 
   constructor(private translate: TranslateService) { 
-    this.translate.setDefaultLang('fr');
   }
 
   ngOnInit() {
