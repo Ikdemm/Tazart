@@ -1,7 +1,7 @@
 <ngx-spinner></ngx-spinner>
 
 <ng-container *ngIf="lang === 'en'">
-    <owl-carousel [options]="slideOptionsHeader" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+    <owl-carousel [options]="slideOptionsHeader" [carouselClasses]="['owl-theme', 'sliding']" >
     <div class="item">
       <div class="ftco-blocks-cover-1">
         <div class="ftco-cover-1" [ngStyle]="{'background-image': 'url(' + 'assets/img/background6.webp' + ')'}">
@@ -137,7 +137,7 @@
 </ng-container>
 
 <ng-container *ngIf="lang === 'fr'">
-    <owl-carousel [options]="slideOptionsHeader" [items]="images" [carouselClasses]="['owl-theme', 'sliding']" >
+    <owl-carousel [options]="slideOptionsHeader" [carouselClasses]="['owl-theme', 'sliding']" >
         <div class="item">
           <div class="ftco-blocks-cover-1">
             <div class="ftco-cover-1" [ngStyle]="{'background-image': 'url(' + 'assets/img/background6.webp' + ')'}">
