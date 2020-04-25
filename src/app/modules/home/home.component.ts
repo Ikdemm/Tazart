@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
   carouselOptions = CAROUSEL_OPTIONS;
 
   constructor(private translate: TranslateService) { 
+    translate.setDefaultLang('fr');
   }
 
   ngOnInit() {

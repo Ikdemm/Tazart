@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NewsService } from 'src/app/core/services/news.service';
 import { CAROUSEL_OPTIONS, NO_SLIDE_OPTIONS} from '../../shared/constants';
 import { LanguageService } from 'src/app/core/services/language.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-news',
@@ -18,9 +19,12 @@ export class NewsComponent implements OnInit, OnDestroy {
   lang;
   subscription;
 
-  constructor(private newsService: NewsService, private languageService: LanguageService) { 
+  constructor(private newsService: NewsService,
+    private languageService: LanguageService,
+    private translate: TranslateService) { 
     this.subscription = this.languageService.getLanguage()
     .subscribe(lang => this.lang = lang);
+    this.translate.use(this.lang);
   }
 
   ngOnInit() {
