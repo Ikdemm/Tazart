@@ -101,7 +101,7 @@
                     },
                     {
                         "name": "Deglet Nour en vrac",
-                        "segment": "Packs",
+                        "segment": "Paquets",
                         "photoUrl": "assets/img/products/packs2-new.webp",
                         "photoRawUrl": "src/assets/img/products-raw/pack-raw-new-2.webp",
                         "caption": "Deglet Nour en vrac, Categorie 1 - 500g",
@@ -141,7 +141,7 @@
                         "photoUrl": "assets/img/products/dates-bulk1.webp",
                         "photoRawUrl": "assets/img/products-raw/dates-bulk-raw-1.webp",
                         "caption": "Paquet de dattes en vrac - 250g",
-                        "packaging": "Pack 250g",
+                        "packaging": "Paquet 250g",
                         "designation": "Paquet de dattes en vrac (250g)",
                         "packpBox": "20",
                         "boxpPallet": "192",
@@ -163,7 +163,7 @@
                     },
                     {
                         "name": "Deglet Nour en vrac",
-                        "segment": "Dates en vrac",
+                        "segment": "Dattes en vrac",
                         "photoUrl": "assets/img/products/dates-bulk2.webp",
                         "photoRawUrl": "assets/img/products-raw/dates-bulk-raw-2.webp",
                         "caption": "Deglet Nour en barquette en bois - 250g",
@@ -262,7 +262,7 @@
                 ]   
             },
             {
-                "name": "Figues séchées",
+                "name": "Figues séchées à l'huile d'olive",
                 "title": "Découvrez nos figues séchées à ",
                 "styled": "l'huile d'olive",
                 "subtitle": null,
@@ -405,7 +405,7 @@
                         "photoRawUrl": "assets/img/products-raw/sirop-figues-seche-raw.webp",
                         "caption": "Préparation à base de figues lavées et mises en cuisson, pot en verre de 340g",
                         "packaging": "Pot en verre 340g",
-                        "category": "syrups"
+                        "category": "sirops"
                     }
                 ]   
             }

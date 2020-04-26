@@ -25,6 +25,8 @@ import { NgxSpinnerModule } from "ngx-spinner";
 
 import { MatTabsModule } from '@angular/material/tabs';
 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -56,7 +58,7 @@ import { MatTabsModule } from '@angular/material/tabs';
         }
     })
   ],
-  providers: [ {provide: Window, useValue: window} ],
+  providers: [ {provide: LocationStrategy, useClass: HashLocationStrategy} ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

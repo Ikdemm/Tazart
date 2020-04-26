@@ -101,9 +101,9 @@
                     },
                     {
                         "name": "Deglet Nour en vrac",
-                        "segment": "Packs",
+                        "segment": "Paquets",
                         "photoUrl": "assets/img/products/packs2-new.webp",
-                        "photoRawUrl": "src/assets/img/products-raw/pack-raw-new-2.webp",
+                        "photoRawUrl": "src/assets/img/products-raw/pack-raw-2.webp",
                         "caption": "Deglet Nour en vrac, Categorie 1 - 500g",
                         "packaging": "Categorie1 500g",
                         "designation": "Paquet dattes naturelles 500g",
@@ -262,7 +262,7 @@
                 ]   
             },
             {
-                "name": "Figues séchées",
+                "name": "Figues séchées à l'huile d'olive",
                 "title": "Découvrez nos figues séchées à ",
                 "styled": "l'huile d'olive",
                 "subtitle": null,
@@ -284,7 +284,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
-                        "category": "figs",
+                        "category": "figues",
                         "technicalSheet": {
                             "description": "Cubes de figues séchées naturelles aux fruits secs et à huile d’olive -séchage solaire sur l’arbre",
                             "storage": "12 mois – température de 0°C à 4°C HR<65%",
@@ -312,7 +312,7 @@
                         "height": "1.8",
                         "palpSR": "33",
                         "frigoDry": "10",
-                        "category": "figs",
+                        "category": "figues",
                         "technicalSheet": {
                             "description": "Figues séchées à huile d’olive - séchage solaire sur l’arbre",
                             "storage": "12 mois – température de 0°C à 4°C HR<65%",
@@ -405,7 +405,7 @@
                         "photoRawUrl": "assets/img/products-raw/sirop-figues-seche-raw.webp",
                         "caption": "Préparation à base de figues lavées et mises en cuisson, pot en verre de 340g",
                         "packaging": "Pot en verre 340g",
-                        "category": "syrups"
+                        "category": "sirops"
                     }
                 ]   
             }

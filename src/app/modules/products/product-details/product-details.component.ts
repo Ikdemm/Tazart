@@ -20,6 +20,8 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
   subscription;
   lang;
 
+  productSubdcription;
+
   slideOptionsProduct = SLIDE_OPTIONS;
   slideOptionsHeader = NO_SLIDE_OPTIONS;
   carouselOptions = CAROUSEL_OPTIONS;
@@ -32,28 +34,24 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
     .subscribe(lang => this.lang = lang);
   }
 
-
-  fetchProducts() {
-    this.productsService.getProducts().subscribe(data => {
-      console.log(data);
-    })
-  }
-
   ngOnInit() {
 
-    this.languageService.getLanguage().subscribe(lang => {this.lang = lang; console.log(this.lang)});
+    this.languageService.getLanguage().subscribe(lang => {this.lang = lang;});
 
-    this.productsService.getAllData().subscribe(data => {
+    this.productSubdcription = this.route.data.subscribe(data => {
+      console.log(data);
       this.data = data;
+      console.log(this.data);
       this.route.params
       .subscribe(
         (params: Params) => {
           console.log(params['name']);
           let found = false;
           this.data.forEach(category => {
+            console.log("here");
             if (!found) {
-              this.segment = category.elements.find(segment => segment.name == params['name']);              
-              console.log(this.segment);
+              this.segment = category.elements.find(segment => segment.name == params['name']);
+            
               if (this.segment) {
                 this.products = this.segment.products;
                 console.log(this.products);
@@ -67,6 +65,7 @@ export class ProductDetailsComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {
     this.subscription.unsubscribe();
+    this.productSubdcription.unsubscribe();
   }
 
 }

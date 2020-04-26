@@ -25,7 +25,7 @@
     <div class="row product">
       <div class="col-md-5 text-center">
         <owl-carousel [options]="slideOptionsProduct" [carouselClasses]="['owl-theme', 'sliding']" >
-          <div *ngFor="let product of products"class="item">
+          <div *ngFor="let product of products" class="item">
             <div class="product-2">
               <img src="{{product.photoRawUrl}}" class="product-image">
               <h4 class="product-title text-center">{{product.caption}}</h4>
@@ -36,5 +36,6 @@
       <div class="col-md-7">
         <p class="product-description">{{segment.description}}</p>
       </div>
+    </div>
   </div>
 </div>
